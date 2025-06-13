@@ -1,0 +1,63 @@
+baseURL = 'https://yeguclu.github.io/'
+languageCode = 'en-us'
+title = 'yegueeclu'
+theme = 'PaperMod'
+
+
+[params]
+  defaultTheme = "dark"
+
+    [params.label]
+      text = "yeguclu"
+      icon = "images/avatar.png"
+      iconHeight = 32
+
+  [params.profileMode]
+    enabled = true
+    title = "Hey there! 🤔"
+    subtitle = "I'm **yeguclu**, a systems and blockchain explorer."
+    imageUrl = "images/avatar.png"
+    imageTitle = "avatar"
+    imageWidth = 120
+    imageHeight = 120
+    buttons = [
+      { name = "Articles", url = "/articles/" }
+    ]
+
+
+[[menu.main]]
+  name = "About"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Articles"
+  url = "/articles/"
+  weight = 3
+
+[[menu.main]]
+  name = "Interests"
+  url = "/interests/"
+  weight = 2
+
+[[menu.main]]
+  name = "Suggested Reads"
+  url = "/suggested_reads/"
+  weight = 4
+
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/yeguclu"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/0xemremre"
+
+[[params.socialIcons]]
+name = "telegram"
+url  = "https://t.me/yeguclu"
+
+[[params.socialIcons]]
+name = "farcaster"
+url  = "https://farcaster.xyz/pompaci"
