@@ -1,0 +1,10 @@
+/* Custom styles for profile subtitle */
+.profile_inner span {
+    font-size: 0.9em !important;
+    line-height: 1.6 !important;
+}
+
+/* Additional spacing for better paragraph separation */
+.profile_inner span {
+    margin-bottom: 1em;
+}
