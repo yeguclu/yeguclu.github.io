@@ -42,6 +42,9 @@ This site automatically deploys to GitHub Pages using GitHub Actions:
 - **Articles**: Future content section (currently placeholder)
 - **Navigation**: About (home) and Articles buttons
 
+## Site URL
+Your site will be available at: **https://yeguclu.github.io**
+
 ## Configuration
 
 - `hugo.toml` - Main site configuration

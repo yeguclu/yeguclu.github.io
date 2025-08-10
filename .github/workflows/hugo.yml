@@ -41,7 +41,7 @@ jobs:
         with:
           submodules: recursive
           # The GitHub Pages site is built from the docs/ directory
-          # If you're using a different directory, change it here
+          # For username.github.io repositories, this should be docs
           path: docs
       - name: Setup Pages
         id: pages
