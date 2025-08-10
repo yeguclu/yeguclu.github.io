@@ -40,9 +40,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          # The GitHub Pages site is built from the docs/ directory
-          # For username.github.io repositories, this should be docs
-          path: docs
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
@@ -61,7 +58,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs/public
+          path: ./docs
 
   # Deployment job
   deploy:
