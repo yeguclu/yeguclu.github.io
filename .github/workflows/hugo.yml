@@ -40,6 +40,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: Check theme submodule
+        run: |
+          echo "Checking theme submodule..."
+          git submodule status
+          ls -la themes/
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
@@ -51,10 +56,18 @@ jobs:
           HUGO_ENV: production
           HUGO_ENABLEGITINFO: true
         run: |
+          echo "Current directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+          echo "Theme directory contents:"
+          ls -la themes/
+          echo "Building Hugo site..."
           hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+          echo "Build completed. Docs directory contents:"
+          ls -la docs/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
