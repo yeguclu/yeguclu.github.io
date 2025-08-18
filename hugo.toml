@@ -30,6 +30,10 @@ theme = "PaperMod"
     name = "github"
     url = "https://github.com/yeguclu"
 
+  [[params.socialIcons]]
+    name = "CV"
+    url = "https://ipfs.io/ipfs/bafkreibim7oi2kzo3phzfrtj7oob24q4p2kow2xpigjymwltcf7w5myc4m"
+
 [menu]
 
   [[menu.main]]
